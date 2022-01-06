@@ -5,7 +5,7 @@ import MadeData from "./Data";
 import { ChartCanvas, Chart } from "react-stockcharts";
 import { CandlestickSeries } from "react-stockcharts/lib/series";
 import { XAxis, YAxis } from "react-stockcharts/lib/axes";
-import { utcDay } from "d3-time-format";
+import { utcDay } from "d3-time";
 import { fitWidth } from "react-stockcharts/lib/helper";
 import { timeIntervalBarWidth } from "react-stockcharts/lib/utils";
 
