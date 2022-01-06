@@ -71,7 +71,7 @@ import PropTypes from "prop-types";
 import { scaleTime } from "d3-scale";
 import MadeData from "./Data";
 import { ChartCanvas, Chart } from "react-stockcharts";
-import { CandlestickSeries } from "react-stockcharts/lib/series";
+import { CandlestickSeries, BarSeries } from "react-stockcharts/lib/series";
 import { XAxis, YAxis } from "react-stockcharts/lib/axes";
 import { utcDay } from "d3-time";
 import { fitWidth } from "react-stockcharts/lib/helper";
@@ -101,6 +101,10 @@ let ChartJS = (props) => {
           <XAxis axisAt="bottom" orient="bottom" ticks={6} />
           <YAxis axisAt="left" orient="left" ticks={5} />
           <CandlestickSeries width={timeIntervalBarWidth(utcDay)} />
+          <BarSeries
+            yAccessor={(d) => d.volume}
+            fill={(d) => (d.close > d.open ? "#6BA583" : "#FF0000")}
+          />
         </Chart>
       </ChartCanvas>
     </div>
