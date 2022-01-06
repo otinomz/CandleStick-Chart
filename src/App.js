@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./styles.css";
 import ChartJS from "./components/Chart";
 import MadeData from "./components/Data";
@@ -11,6 +11,10 @@ const App = () => {
     charts.push(<ChartJS key={1} data={MadeData} />);
     setChartsToDisplay(charts);
   };
+
+  useEffect(() => {
+    getData();
+  }, []);
 
   return (
     <div className="App">
