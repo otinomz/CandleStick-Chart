@@ -1,2 +1,1 @@
-# CandleStick-Chart
-Created with CodeSandbox
+# candleStick stock Chart with React js.
