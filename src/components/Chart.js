@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { scaleTime } from "d3-scale";
 import MadeData from "./Data";
 import { ChartCanvas, Chart } from "react-stockcharts";
-import { CandleStickSeries } from "react-stockcharts/lib/series";
+import { CandlestickSeries } from "react-stockcharts/lib/series";
 import { XAxis, YAxis } from "react-stockcharts/lib/axes";
 import { utcDay } from "d3-time-format";
 import { fitWidth } from "react-stockcharts/lib/helper";
