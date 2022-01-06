@@ -24,6 +24,7 @@ let ChartJS = (props) => {
         //  as stated in the documentaion
         margin={{ left: 50, right: 50, top: 10, bottom: 30 }}
         type={type}
+        data={data}
         xAccessor={xAccessor}
         seriesName="MSFT"
         xScale={scaleTime()}
