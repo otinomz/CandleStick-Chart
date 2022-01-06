@@ -32,7 +32,19 @@ let ChartJS = (props) => {
         // from the datas, date starts at january 2020 to feb
         //
         xExtents={[new Date(2020, 0, 30), new Date(2020, 1, 16)]}
-      ></ChartCanvas>
+      >
+        <Chart id={1} yExtents={[(d) => [d.high, d.low]]}>
+          <XAxis axisAt="bottom" orient="bottom" ticks={6} />
+          <YAxis axisAt="left" orient="left" ticks={5} />
+          {/* <MouseCoordinateY
+            at="right"
+            orient="right"
+            displayFormat={format(".2f")}
+          /> */}
+          <CandlestickSeries width={timeIntervalBarWidth(utcDay)} />
+          {/* <OHLCTooltip origin={[-40, 0]} /> */}
+        </Chart>
+      </ChartCanvas>
     </div>
   );
 };
