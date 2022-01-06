@@ -103,7 +103,7 @@ let ChartJS = (props) => {
           <CandlestickSeries width={timeIntervalBarWidth(utcDay)} />
           <BarSeries
             yAccessor={(d) => d.volume}
-            fill={(d) => (d.close > d.open ? "#6BA583" : "#FF0000")}
+            fill={(d) => (d.close > d.open ? "#408722" : "#FF0000")}
           />
         </Chart>
       </ChartCanvas>
