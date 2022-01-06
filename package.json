@@ -5,9 +5,16 @@
   "keywords": ["react", "starter"],
   "main": "src/index.js",
   "dependencies": {
+    "d3-dsv": "3.0.1",
+    "d3-format": "3.1.0",
+    "d3-scale": "4.0.2",
+    "d3-time-format": "4.1.0",
+    "prop-types": "15.8.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "react-scripts": "4.0.0"
+    "react-scripts": "4.0.0",
+    "react-stockcharts": "0.7.8",
+    "shortid": "2.2.16"
   },
   "devDependencies": {
     "@babel/runtime": "7.13.8",
