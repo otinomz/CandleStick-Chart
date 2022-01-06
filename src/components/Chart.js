@@ -23,6 +23,14 @@ let ChartJS = (props) => {
         width={width}
         {/* as stated in the documentaion */}
         margin={{ left: 50, right: 50, top: 10, bottom: 30 }}
+        type={type}
+        xAccessor={xAccessor}
+        seriesName = "MSFT" xScale={scaleTime()}
+        {/* this xExtents would carry the range you
+        want the date to start at 
+        from the datas, date starts at january 2020 to feb
+        */}
+        xExtents={[new Date(2020, 0, 30), new Date(2020, 1, 16)]}
       </ChartCanvas>
     </div>
   );
