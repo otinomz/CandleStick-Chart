@@ -49,4 +49,17 @@ let ChartJS = (props) => {
   );
 };
 
+ChartJS.prototype = {
+  data: PropTypes.array.isRequired,
+  width: PropTypes.number.isRequired,
+  ratio: PropTypes.number.isRequired,
+  type: PropTypes.oneOf(["svg", "hybrid"]).isRequired
+};
+
+ChartJS.defaultProps = {
+  type: "svg"
+};
+
+ChartJS = fitWidth(ChartJS);
+
 export default ChartJS;
