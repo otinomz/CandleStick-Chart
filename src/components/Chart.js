@@ -81,7 +81,7 @@ let ChartJS = (props) => {
   const { type, width, ratio } = props;
   const data = MadeData;
   const xAccessor = (d) => {
-    return d.data;
+    return d.date;
   };
   return (
     <div className="ChartJS">
