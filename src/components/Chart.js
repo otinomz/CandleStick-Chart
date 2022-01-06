@@ -101,10 +101,10 @@ let ChartJS = (props) => {
           <XAxis axisAt="bottom" orient="bottom" ticks={6} />
           <YAxis axisAt="left" orient="left" ticks={5} />
           <CandlestickSeries width={timeIntervalBarWidth(utcDay)} />
-          <BarSeries
+          {/* <BarSeries
             yAccessor={(d) => d.volume}
             fill={(d) => (d.close > d.open ? "#408722" : "#FF0000")}
-          />
+          /> */}
         </Chart>
       </ChartCanvas>
     </div>
