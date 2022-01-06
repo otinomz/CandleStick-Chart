@@ -15,6 +15,7 @@ let ChartJS = (props) => {
   const xAccessor = (d) => {
     return d.date;
   };
+
   return (
     <div className="ChartJS">
       <ChartCanvas
