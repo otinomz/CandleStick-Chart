@@ -5,6 +5,13 @@ import MadeData from "./components/Data";
 
 const App = () => {
   const [chartsToDisplay, setChartsToDisplay] = useState([]);
+
+  const getData = async () => {
+    const charts = [];
+    charts.push(<ChartJS key={1} data={MadeData} />);
+    setChartsToDisplay(charts);
+  };
+
   return (
     <div className="App">
       <h1>CandleStick Stock Chart</h1>
