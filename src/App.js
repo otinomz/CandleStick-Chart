@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from "react";
-import "./styles.css";
+import React, { useState, useEffect } from "react";
 import ChartJS from "./components/Chart";
 import MadeData from "./components/Data";
 
@@ -16,12 +15,7 @@ const App = () => {
     getData();
   }, []);
 
-  return (
-    <div className="App">
-      <h1>CandleStick Stock Chart</h1>
-      <ChartJS />
-    </div>
-  );
+  return <div className="App">{chartsToDisplay}</div>;
 };
 
 export default App;
